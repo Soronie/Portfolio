@@ -3,50 +3,75 @@
 <head>
 	<title>Portfolio - Rafaeli Arroyo</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/semantic.min.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/landing.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<script src="assets/js/jquery-3.2.1.min.js"></script>
+	<script src="assets/js/semantic.min.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<!-- Navigation Bar -->
-	<div class="ui inverted segment">
-	  	<div class="ui inverted secondary pointing menu">
-	  		<div class="ui container">
-		    	<a class="item">
-		    		About Me
-			    </a>
-			    <a class="item">
-			      	Experience
-			    </a>
-			    <a class="item">
-			      	Skills
-			    </a>
-			    <a class="item">
-			      	Projects
-			    </a>
-			    <a class="item">
-			    	Recommendations
-			    </a>
+	<!-- Return to top button that displays when scrolled -->
+	<a id="return-to-top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+
+	<!-- Navigation bar that contains sections to scroll down to -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#portfolio_links" aria-expanded="true">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			    </button>
 			</div>
-	  	</div>
-	</div>
+			<div class="collapse navbar-collapse" id="portfolio_links">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a class="scroll" href="#about_me">About Me</a></li>
+					<li><a class="scroll" href="#experience">Experience</a></li>
+					<li><a class="scroll" href="#skills">Skills</a></li>
+					<li><a class="scroll" href="#projects">Projects</a></li>
+					<li><a class="scroll" href="#recommendations">Recommendations</a></li>
+					<li><a href="https://www.linkedin.com/in/rafaeli-arroyo/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+					<li><a href="https://github.com/Soronie"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	    <div id="landing-header">
+ 			<h1>Hi, I'm Rafaeli.</h1>
+ 			<h1>I'm a developer, musician, and gamer!</h1>
+			<a class="scroll btn btn-lg btn-success" href="#about_me">Learn More About Me</a>
+	    </div>
+    
+    	<ul class="slideshow">
+      		<li></li>
+      		<li></li>
+      		<li></li>
+      		<li></li>
+      		<li></li>
+    	</ul>
 
 		<!-- About Me -->
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-xs-12 thumbnail">
-						<img id="about_photo" src="assets/img/aboutmephoto.jpg">
-					</div>
-					<div id="about_description" class="col-md-6 col-xs-12">
-						<h1>About Me</h1>
-						<p>My name is Rafaeli Arroyo. I'm a software developer currently residing in Emeryville, California. In June 2017, I graduated with my bachelor's degree in Computer Science and Engineering from UC Davis.</p>
-						<p>My main interests are in full stack development and back-end/data engineering. I'm actively learning more about various tech stacks (Node, HTML/CSS/JS) and databases (MongoDB, SQL) for future projects that I have in mind. As a gamer, I also love applying the skills I've learned to build simple, interactive games or web applications. In my long-term career, I aspire to keep challenging myself to learn new things and apply what I've learned to create a positive impact on other people's lives.</p>
-						<p>My hobbies include playing the violin and playing competitive Super Smash Bros (or Smash, for short). I've played the violin for six years and competed at Smash tournaments in California for four years. Both activities truly motivate me to improve myself and always do my best in all aspects of my life, both personal and professional.</p>
-					</div>
+		<div id="about_me" class="container section">
+			<div class="row">
+				<div class="col-md-6 col-xs-12 thumbnail">
+					<img id="about_photo" src="assets/img/aboutmephoto.jpg">
+				</div>
+				<div id="about_description" class="col-md-6 col-xs-12">
+					<h1>About Me</h1>
+					<p>My name is Rafaeli Arroyo. I'm a software developer currently residing in Emeryville, California. In June 2017, I graduated with my bachelor's degree in Computer Science and Engineering from UC Davis.</p>
+					<p>My main interests are in full stack development and back-end/data engineering. I'm actively learning more about various tech stacks (Node, HTML/CSS/JS) and databases (MongoDB, SQL) for future projects that I have in mind. As a gamer, I also love applying the skills I've learned to build simple, interactive games or web applications. In my long-term career, I aspire to keep challenging myself to learn new things and apply what I've learned to create a positive impact on other people's lives.</p>
+					<p>My hobbies include playing the violin and playing competitive Super Smash Bros (or Smash, for short). I've played the violin for six years and competed at Smash tournaments in California for four years. Both activities truly motivate me to improve myself and always do my best in all aspects of my life, both personal and professional.</p>
 				</div>
 			</div>
+		</div>
 
 		<!-- Experience -->
-		<div class="container">
+		<div id="experience" class="container section">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 col-xs-12">
 					<h1>Experience</h1>
@@ -71,31 +96,31 @@
 		</div>
 
 		<!-- Skills -->
-			<h1>Skills</h1>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-xs-12 skills">
-						<h3>Proficient:</h3>
-							<li>Java</li>
-							<li>C++</li>
-							<li>Python</li>
-							<li>R</li>
-							<li>Git</li>
-							<li>Node.js</li>
-							<li>HTML</li>
-							<li>JavaScript</li>
-					</div>
-					<div class="col-md-6 col-xs-12 skills">
-						<h3>Basic/Actively Learning:</h3>
-							<li>MongoDB</li>
-							<li>SQL</li>
-							<li>React.js</li>
-							<li>Django</li>
-					</div>
+		<div id="skills" class="container section">
+			<div class="row">
+				<h1>Skills</h1>
+				<div class="col-md-6 col-xs-12 skills">
+					<h3>Proficient:</h3>
+						<li>Java</li>
+						<li>C++</li>
+						<li>Python</li>
+						<li>R</li>
+						<li>Git</li>
+						<li>Node.js</li>
+						<li>HTML</li>
+						<li>JavaScript</li>
+				</div>
+				<div class="col-md-6 col-xs-12 skills">
+					<h3>Basic/Actively Learning:</h3>
+						<li>MongoDB</li>
+						<li>SQL</li>
+						<li>React.js</li>
+						<li>Django</li>
 				</div>
 			</div>
+		</div>
 
-		<div class="container">
+		<div id="projects" class="container section">
 			<h1>Projects</h1>
 			<div class="row">
 				<div class="col-md-4 col-xs-12">
@@ -144,7 +169,7 @@
 		</div>
 
 		<!-- Recommendations -->
-		<div class="container">
+		<div id="recommendations" class="container section">
 			<div class="row">
 				<div id="recommendations" class="col-xs-10 col-xs-offset-1">
 					<h1>Recommendations</h1>
@@ -154,8 +179,6 @@
 			</div>
 		</div>
 
-	<script src="assets/js/jquery-3.2.1.min.js"></script>
-	<script src="assets/js/semantic.min.js"></script>
 	<script src="main.js"></script>
 </body>
 </html>
