@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Portfolio - Rafaeli Arroyo</title>
+		<!-- Stylesheets -->
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="/assets/css/landing.css">
+		<link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+
+		<!-- Scripts -->
+		<script src="/assets/js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<!-- Return to top button that displays when scrolled -->
+		<a id="return-to-top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+
+		<!-- Navigation bar that contains sections to scroll down to -->
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+				    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#portfolio_links" aria-expanded="true">
+			    	    <span class="sr-only">Toggle navigation</span>
+				       	<span class="icon-bar"></span>
+			    	    <span class="icon-bar"></span>
+			        	<span class="icon-bar"></span>
+			    	</button>
+				</div>
+				<div class="collapse navbar-collapse" id="portfolio_links">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a class="scroll" href="#about_me">About Me</a></li>
+						<li><a class="scroll" href="#experience">Experience</a></li>
+						<li><a class="scroll" href="#skills">Skills</a></li>
+						<li><a class="scroll" href="#projects">Projects</a></li>
+						<li><a class="scroll" href="#recommendations">Recommendations</a></li>
+						<li><a href="https://www.linkedin.com/in/rafaeli-arroyo/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+						<li><a href="https://github.com/Soronie"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+	    <div id="landing-header">
+ 			<h1>Hi, I'm Rafaeli.</h1>
+ 			<h1>I'm a developer, musician, and gamer!</h1>
+			<a class="scroll btn btn-lg btn-primary" href="#about_me">Learn More About Me</a>
+	    </div>
+    
+    	<ul class="slideshow">
+      		<li></li>
+      		<li></li>
+      		<li></li>
+      		<li></li>
+      		<li></li>
+    	</ul>
+
+		<!-- About Me -->
+		<div id="about_me" class="container section">
+			<div class="row">
+				<div class="col-md-6 col-xs-12 thumbnail">
+					<img id="about_photo" src="assets/img/aboutmephoto.jpg">
+				</div>
+				<div id="about_description" class="col-md-6 col-xs-12">
+					<div class="col-xs-8 col-xs-offset-2 header">
+						<h1>About Me</h1>
+					</div>
+					<div class="col-xs-12">
+					<p>My name is Rafaeli Arroyo. I'm a software developer currently residing in Emeryville, California. In June 2017, I graduated with my bachelor's degree in Computer Science and Engineering from UC Davis.</p>
+					<p>My main interests are in full stack development and back-end/data engineering. I'm actively learning more about various tech stacks (Node, HTML/CSS/JS) and databases (MongoDB, SQL) for future projects that I have in mind. As a gamer, I also love applying the skills I've learned to build simple, interactive games or web applications. In my long-term career, I aspire to keep challenging myself to learn new things and apply what I've learned to create a positive impact on other people's lives.</p>
+					<p>My hobbies include playing the violin and playing competitive Super Smash Bros (or Smash, for short). I've played the violin for six years and competed at Smash tournaments in California for four years. Both activities truly motivate me to improve myself and always do my best in all aspects of my life, both personal and professional.</p>
+				</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Experience -->
+		<div id="experience" class="container section">
+			<div class="row">
+				<div class="col-xs-8 col-xs-offset-2 header">
+					<h1>Experience</h1>
+				</div>
+				<div class="col-md-8 col-md-offset-2 col-xs-12">
+					<div class="exp_info">
+						<h4>Role:</h4>
+						<p>Software Developer</p>
+						<h4>Company:</h4>
+						<p>Land, Air, and Water Resources at UC Davis (LAWR)</p>
+						<h4>Employer/Supervisor:</h4>
+						<p>Gregory Pasternack</p>
+						<h4>Technologies Used:</h4>
+						<div class="skills">
+							<li>Python</li>
+							<li>R</li>
+							<li>ArcGIS</li>
+						</div>
+						<h4>Accomplishments/Responsibilities:</h4>
+					</div>
+					<ul>
+						<li>Enhanced a river generation software by creating and adding new functions for a river's meander and cross-section.</li>
+						<li>Implemented generation of data visualizations and coordinates for user-defined rivers.</li>
+						<li>Authored the user guide for the mentioned software which was then packaged and submitted to CRAN</li>
+						<li>Collaborated with research assistants to develop Python scripts that automate tedious, heavy workflows on ArcGIS</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- Skills -->
+		<div id="skills" class="container section">
+			<div class="row">
+				<div class="col-xs-8 col-xs-offset-2 header">
+					<h1>Skills</h1>
+				</div>
+				<div class="col-md-6 col-xs-12 skills">
+					<h3>Proficient:</h3>
+						<li>Java</li>
+						<li>C++</li>
+						<li>Python</li>
+						<li>R</li>
+						<li>Git</li>
+						<li>Node.js</li>
+						<li>HTML</li>
+						<li>JavaScript</li>
+				</div>
+				<div class="col-md-6 col-xs-12 skills">
+					<h3>Basic/Actively Learning:</h3>
+						<li>MongoDB</li>
+						<li>SQL</li>
+						<li>React.js</li>
+						<li>Django</li>
+						<li>CSS</li>
+				</div>
+			</div>
+		</div>
+
+		<div id="projects" class="container section">
+			<div class="row">
+				<div class="col-xs-8 col-xs-offset-2 header">
+					<h1>Projects</h1>
+				</div>
+				<div class="col-md-4 col-xs-12">
+					<h3>Inventory Tracking Website</h3>
+					<div class="skills">
+						<li>MongoDB, Express, Angular, Node (MEAN)</li>
+						<li>Bootstrap</li>
+					</div>
+					<ul>
+						<li>A website that keeps track of inventory checked in and out by various UC Davis departments.</li>
+						<li>Enhanced the user’s ability to extract information from the database by generating statistics, graphs, and text files that are more easily accessible and readable.</li>
+						<li>Helped design the website layout with a side bar, downloadable links, and authorization-based content.</li>
+						<li>Source code: <a href="https://github.com/gill-navpreet/Equipment-Inventory-Tracking-Project">https://github.com/gill-navpreet/Equipment-Inventory-Tracking-Project</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4 col-xs-12">
+					<h3>Carduo</h3>
+					<div class="skills">
+						<li>HTML/CSS</li>
+						<li>JavaScript/jQuery</li>
+					</div>
+					<ul>
+						<li>A single-page game application where the player accumulates points by matching two cards of each type.</li>
+						<li>Source code: <a href="https://github.com/Soronie/Carduo">https://github.com/Soronie/Carduo</a></li>
+						<li>Play it <a href="#">here</a>! (Link doesn't work yet.)</li>
+					</ul>
+				</div>
+				<div class="col-md-4 col-xs-12">
+					<h3>Undo/Redo Buttons (Warcraft II)</h3>
+					<div class="skills">
+						<li>C++</li>
+						<li>Qt Creator</li>
+					</div>
+					<br>
+					<ul>
+						<li>GUI features that undo and redo tile changes made to the terrain of Warcraft II maps to provide more flexibility in map editing.</li>
+						<li>Improved efficiency of an algorithm with an additional process that recognizes and clears out unnecessary data in storage buffers, greatly reducing memory usage.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- Recommendations -->
+		<div id="recommendations" class="container section">
+			<div class="row">
+				<div class="col-xs-8 col-xs-offset-2 header">
+					<h1>Recommendations</h1>
+				</div>
+				<div class="col-xs-10 col-xs-offset-1">
+					<% recommendations.forEach(function(rec){ %>
+						<div class="recommendation">
+							<span class="rec_content" value="<%= rec.content %>"><%= rec.content.substring(0, 300) %>... </span>
+							<a class="rec_toggle">Read More</a>
+							<p class="rec_author"><br>- <%= rec.author %></p>
+						</div>
+					<% }); %>
+				</div>
+			</div>
+		</div>
+
+		<script src="main.js"></script>
+	</body>
+</html>

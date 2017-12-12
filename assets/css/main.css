@@ -1,4 +1,4 @@
-h1, h3, h5 {
+h1, h3, h4, h5 {
 	text-align: center;
     font-family: "Source Sans Pro";
     font-weight: 700;
@@ -9,7 +9,7 @@ h1, h3, h5 {
     opacity: 1;
     width: 387px;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .thumbnail {
@@ -20,18 +20,20 @@ h1, h3, h5 {
 
 #about_description {
 	font-size: 20px;
+    padding-bottom: 10px;
 }
 
 .skills li {
 	text-align: center;
 	list-style-type: none;
+    font-size: 17px;
 }
 
 .skills {
     margin-bottom: 30px;
 }
 
-.exp_title {
+.exp_info {
 	text-align: center;
 }
 
@@ -63,6 +65,16 @@ p, li {
 
 #recommendations {
     margin-bottom: 60px;
+    font-size: 20px;
+}
+
+.rec_author {
+    text-align: right;
+    visibility: hidden;
+}
+
+.rec_toggle:hover {
+    cursor: pointer;
 }
 
 /* Return to top button styling */
@@ -110,8 +122,4 @@ p, li {
 #return-to-top:hover i {
     color: #fff;
     top: 5px;
-}
-
-.author {
-    text-align: right;
 }
