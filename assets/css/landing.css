@@ -21,6 +21,13 @@ body {
        0px 30px 33px rgba(0, 0, 0, 0.1);
 }
 
+.btn {
+  margin-top: 20px;
+  opacity: 0.90;
+  font-family: Lobster;
+  letter-spacing: 2px;
+}
+
 .slideshow { 
   position: fixed;
   width: 100%;

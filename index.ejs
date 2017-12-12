@@ -4,6 +4,7 @@
 	<title>Portfolio - Rafaeli Arroyo</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/semantic.min.css">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/landing.css">
@@ -44,7 +45,7 @@
 	    <div id="landing-header">
  			<h1>Hi, I'm Rafaeli.</h1>
  			<h1>I'm a developer, musician, and gamer!</h1>
-			<a class="scroll btn btn-lg btn-success" href="#about_me">Learn More About Me</a>
+			<a class="scroll btn btn-lg btn-primary" href="#about_me">Learn More About Me</a>
 	    </div>
     
     	<ul class="slideshow">
@@ -62,10 +63,14 @@
 					<img id="about_photo" src="assets/img/aboutmephoto.jpg">
 				</div>
 				<div id="about_description" class="col-md-6 col-xs-12">
-					<h1>About Me</h1>
+					<div class="col-xs-8 col-xs-offset-2 header">
+						<h1>About Me</h1>
+					</div>
+					<div class="col-xs-12">
 					<p>My name is Rafaeli Arroyo. I'm a software developer currently residing in Emeryville, California. In June 2017, I graduated with my bachelor's degree in Computer Science and Engineering from UC Davis.</p>
 					<p>My main interests are in full stack development and back-end/data engineering. I'm actively learning more about various tech stacks (Node, HTML/CSS/JS) and databases (MongoDB, SQL) for future projects that I have in mind. As a gamer, I also love applying the skills I've learned to build simple, interactive games or web applications. In my long-term career, I aspire to keep challenging myself to learn new things and apply what I've learned to create a positive impact on other people's lives.</p>
 					<p>My hobbies include playing the violin and playing competitive Super Smash Bros (or Smash, for short). I've played the violin for six years and competed at Smash tournaments in California for four years. Both activities truly motivate me to improve myself and always do my best in all aspects of my life, both personal and professional.</p>
+				</div>
 				</div>
 			</div>
 		</div>
@@ -73,8 +78,10 @@
 		<!-- Experience -->
 		<div id="experience" class="container section">
 			<div class="row">
-				<div class="col-md-8 col-md-offset-2 col-xs-12">
+				<div class="col-xs-8 col-xs-offset-2 header">
 					<h1>Experience</h1>
+				</div>
+				<div class="col-md-8 col-md-offset-2 col-xs-12">
 					<p class="exp_title">Role:<br>Software Developer</p>
 					<p class="exp_title">Company:<br>Land, Air, and Water Resources at UC Davis (LAWR)</p>
 					<p class="exp_title">Employer/Supervisor:<br>Gregory Pasternack</p>
@@ -98,7 +105,9 @@
 		<!-- Skills -->
 		<div id="skills" class="container section">
 			<div class="row">
-				<h1>Skills</h1>
+				<div class="col-xs-8 col-xs-offset-2 header">
+					<h1>Skills</h1>
+				</div>
 				<div class="col-md-6 col-xs-12 skills">
 					<h3>Proficient:</h3>
 						<li>Java</li>
@@ -116,13 +125,16 @@
 						<li>SQL</li>
 						<li>React.js</li>
 						<li>Django</li>
+						<li>CSS</li>
 				</div>
 			</div>
 		</div>
 
 		<div id="projects" class="container section">
-			<h1>Projects</h1>
 			<div class="row">
+				<div class="col-xs-8 col-xs-offset-2 header">
+					<h1>Projects</h1>
+				</div>
 				<div class="col-md-4 col-xs-12">
 					<h3>Inventory Tracking Website</h3>
 					<br>
@@ -171,10 +183,12 @@
 		<!-- Recommendations -->
 		<div id="recommendations" class="container section">
 			<div class="row">
-				<div id="recommendations" class="col-xs-10 col-xs-offset-1">
+				<div class="col-xs-8 col-xs-offset-2 header">
 					<h1>Recommendations</h1>
+				</div>
+				<div id="recommendations" class="col-xs-10 col-xs-offset-1">
 					<p>"Rafaeli Arroyo has been working for me as a computer programmer since mid-April 2017. I selected her among a pool of applicants because of her previous experience working with terrain data, which was a useful starting point for this job. The work I have been asking her to do has involved programming for scientific purposes, but which also has some cross-over into commercial applications. Specifically, she has been writing software that is capable of procedural generation of river valleys on the basis of scientific algorithms my students and I have developed as well as drawing from the scientific literature. The code is written in R, because that is the primary open-source language of use in academia these days. She started with a functional but terrible implementation of the program developed in an Excel spreadsheet and then on her own effort she translated the functionality over to her own coding in R. I gave her conceptual guidance about what to do and I trained her on the underlying science. It is not easy for someone with no geoscience background to dive into this arena, but I found that she was very capable at tackling the work. I asked her to read scientific journal articles and get mentoring from me on the science and math underlying the problem. I found that she was able to adapt to the situation and successfully develop the code I needed. It really is not easy to do this; I have seen many other undergraduates fail at moving between theory and implementation. Usually she had to work through it on her own, but she was capable of figuring things out and then developing the required code. I have found that she has been creative in her solutions and over time she has taken ever more initiative to find ways to improve the code on her own. Every time I assign her more tasks with coding she jumps into the work and gets it done. Overall, she has been far more successful than I had hoped, which has made the investment in her worth it. I would gladly keep her employed as long as possible, but she needs to move on from university life and get a job in the private sector, so I understand that and I fully support your hiring her. I’m sure you get tons of applications and you have some crazy algorithms that tell you who will succeed or fail. What I can tell you is that against heavy odds, Rafaeli Arroyo has more than succeeded with her job and I can recommend her without hesitation to do whatever coding you need done. She warrants the opportunity and I encourage you to find out for yourself how capable she is."</p>
-					<p>- Gregory Pasternack, professor at LAWR</p>
+					<p class="author">- Gregory Pasternack, professor at UC Davis: LAWR</p>
 				</div>
 			</div>
 		</div>

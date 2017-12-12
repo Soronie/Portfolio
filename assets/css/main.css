@@ -1,5 +1,7 @@
 h1, h3, h5 {
 	text-align: center;
+    font-family: "Source Sans Pro";
+    font-weight: 700;
 }
 
 #about_photo {
@@ -18,7 +20,6 @@ h1, h3, h5 {
 
 #about_description {
 	font-size: 20px;
-	padding-top: 20px;
 }
 
 .skills li {
@@ -38,9 +39,30 @@ h1, h3, h5 {
 	padding-top: 65px;
 }
 
+.header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+    margin-bottom: 15px;
+}
+
 .row {
     background-color: white;
-    opacity: 0.80;
+    opacity: 0.90;
+    border-style: outset;
+    border-radius: 15px;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+        0px 8px 13px rgba(0, 0, 0, 0.3),
+        0px 18px 23px rgba(0, 0, 0, 0.2),
+        0px 30px 33px rgba(0, 0, 0, 0.1);
+}
+
+p, li {
+    font-family: "Source Sans Pro";
+    font-weight: 400;
+}
+
+#recommendations {
+    margin-bottom: 60px;
 }
 
 /* Return to top button styling */
@@ -88,4 +110,8 @@ h1, h3, h5 {
 #return-to-top:hover i {
     color: #fff;
     top: 5px;
+}
+
+.author {
+    text-align: right;
 }
