@@ -128,8 +128,9 @@
 				</div>
 				<div class="col-md-6 col-xs-12 skills">
 					<h3>Basic/Actively Learning:</h3>
-						<li>MongoDB</li>
 						<li>SQL</li>
+						<li>PHP</li>
+						<li>MongoDB</li>
 						<li>React.js</li>
 						<li>Django</li>
 						<li>CSS</li>
@@ -173,7 +174,6 @@
 						<li>C++</li>
 						<li>Qt Creator</li>
 					</div>
-					<br>
 					<ul>
 						<li>GUI features that undo and redo tile changes made to the terrain of Warcraft II maps to provide more flexibility in map editing.</li>
 						<li>Improved efficiency of an algorithm with an additional process that recognizes and clears out unnecessary data in storage buffers, greatly reducing memory usage.</li>
@@ -191,7 +191,7 @@
 				<div class="col-xs-10 col-xs-offset-1">
 					<% recommendations.forEach(function(rec){ %>
 						<div class="recommendation">
-							<span class="rec_content" value="<%= rec.content %>"><%= rec.content.substring(0, 300) %>... </span>
+							<span class="rec_content" value="<%= rec.content %>"><%= rec.content.substring(0, minLength) %>... </span>
 							<a class="rec_toggle">Read More</a>
 							<p class="rec_author"><br>- <%= rec.author %></p>
 						</div>

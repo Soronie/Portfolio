@@ -7,9 +7,9 @@ var recommendations = require("./models/recommendations");
 app.use(express.static(__dirname));
 app.set("view engine", "ejs");
 
-// Send the main application embedded JS page along with recommendations
+// Send the main application embedded JS page with recommendations and minimum content length
 app.get('*', function(req, res){
-	res.render("index", {recommendations: recommendations});
+	res.render("index", {minLength: 250, recommendations: recommendations});
 });
 
 // Start server

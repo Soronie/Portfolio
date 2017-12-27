@@ -22,22 +22,26 @@ $("#return-to-top").click(function() {      // When arrow is clicked
 
 // Toggle recommendations
 $(".rec_toggle").on("click", function(){
+    // Obtain actual content object to extract text
     var content_obj = $(this).siblings(".rec_content");
-    var content_text = $(content_obj).text();
+    // Text before the toggle
+    var before_text = $(content_obj).text();
+    // Text after the toggle which is stored within the content element
+    var after_text = $(content_obj).attr("value");
+
+    // Display appropriate toggle text and the author after the first toggle
     var content_toggle = "Show Less";
     var visibility = "visible";
-    var rec_text = $(content_obj).attr("value");
 
-    // If the content is already extended, shorten it
-    // "... ".length === 4 
-    if(content_text.length > 304){
+    // If the content is already fully displayed, shorten it and hide the author
+    if($(this).text() === content_toggle){
         content_toggle = "Read More";
         visibility = "hidden";
-        rec_text = $(content_obj).attr("value").substring(0, 300) + "... ";
     }
 
     // Change toggle text, author visibility, and recommendation content
     $(this).text(content_toggle);
     $(this).siblings(".rec_author").css("visibility", visibility);
-    $(content_obj).text(rec_text);
+    $(content_obj).text(after_text);
+    $(content_obj).attr("value", before_text);
 });
